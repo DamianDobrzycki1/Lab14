@@ -5,26 +5,27 @@ public class OrderOnlineSystemApp {
         //Create an array or list of InterFace objects
         Burger myBurger;
 
-        InterFace[] interFaces = new InterFace[]{
+        menuItem[] menuItems = new menuItem[]{
             //Add menu Items
             new Burger("Burger", 12, "Cheese"),
             new Pizza("Pepperoni", 14, "Cheese with Pepperoni"),
-            new Salad("Sweet Salad", 8, "Sweet Chili Sauce")
+            new Salad("Sweet Salad", 8, "Sweet Chili Sauce"),
+            new Dessert("Ben and Jerrys", 9, "Cookie Dough")
         };
 
         //Display details of each menu item
-        for(InterFace interFace : interFaces){
+        for(menuItem menuItem : menuItems){
                 //Print out the Name,Description and Price for each item
-            System.out.println("Name: " + interFace.getName());
-            System.out.println("Description: "+ interFace.getDescription());
-            System.out.println("Price: "+ interFace.getPrice());
+            System.out.println("Name: " + menuItem.getName());
+            System.out.println("Description: "+ menuItem.getDescription());
+            System.out.println("Price: "+ menuItem.getPrice());
         }
 
         //Calculate and display the total cost of the order
         double totalCost = 0;
-        for(InterFace interFace : interFaces){
+        for(menuItem menuItem : menuItems){
             //totalCost of all the InterFace prices in an order
-            totalCost += interFace.getPrice();
+            totalCost += menuItem.getPrice();
         }
         System.out.println("Total Cost: €" + totalCost);
     }

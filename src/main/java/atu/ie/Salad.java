@@ -1,6 +1,6 @@
 package atu.ie;
 
-public class Salad implements InterFace{
+public class Salad implements menuItem {
 
     private String name;
     private double price;
@@ -18,7 +18,7 @@ public class Salad implements InterFace{
     }
 
     @Override
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 

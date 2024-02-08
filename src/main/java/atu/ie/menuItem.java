@@ -1,7 +1,7 @@
 package atu.ie;
 
-public interface InterFace {
+public interface menuItem {
     String getName();
-    Double getPrice();
+    double getPrice();
     String getDescription();
 }
