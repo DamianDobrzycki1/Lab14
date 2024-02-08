@@ -12,18 +12,19 @@ public class Burger implements InterFace {
         this.ingredients = ingredients;
 
     }
+
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public Double getPrice() {
-        return null;
+        return price;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return ingredients;
     }
 }
